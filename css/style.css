@@ -166,19 +166,19 @@ display: grid;
   transition: opacity 0.3s ease;
 }
 
-    .imagen-hover {
-      opacity: 0;
-      position:fixed
+.imagen-hover {
+  opacity: 0;
+  position:fixed
     
-    }
+}
 
-    .card:hover .imagen-hover {
-      opacity: 1;
-    }
+.card:hover .imagen-hover {
+  opacity: 1;
+}
 
-    .card:hover .imagen-original {
-      opacity: 0;
-    }
+.card:hover .imagen-original {
+  opacity: 0;
+}
 .card h3 {
   margin-bottom: 10px;
 }
