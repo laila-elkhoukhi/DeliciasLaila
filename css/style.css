@@ -1,0 +1,203 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+.font1{
+  
+  text-align: center;
+  font:40px 'Mifuente';
+  font-style: italic;
+  text-shadow: 5px 5px 5px gray;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  color: rgb(181, 3, 62);
+}
+.font2{
+  font:20px 'Mifuente';
+  font-style: italic;
+  text-shadow: 5px 5px 5px gray;
+  background-color:  rgba(255, 255, 255, 0.3);
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: entrarDesdeArriba 2s ease-out forwards;
+  animation-delay: 0.5s;
+}
+@keyframes entrarDesdeArriba {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff8f2;
+}
+
+header {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  inset: 0;
+ 
+  
+}
+
+.logo {
+  
+  height: 100%;
+}
+.pink{
+  color: palevioletred;
+  font: 'Mifuente3';
+  
+  
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: palevioletred;
+  font-weight: 500;
+}
+
+#hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: url('imagenes/fondo.jpg') no-repeat center center/cover;
+  color: rgba(7, 7, 7, 0.608);
+}
+
+#hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  background-color:whitesmoke;
+  display: inline-block;
+  padding: 10px 20px;
+  
+}
+.especial {
+      
+      opacity: 0;
+      transform: translateX(100%);
+      animation: entrarDesdeDerecha 3s ease-out forwards;
+    }
+
+    @keyframes entrarDesdeDerecha {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+
+.btn {
+  background-color: palevioletred;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color:palevioletred;
+}
+
+.productos {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.productos h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+.fondoDiv{
+display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: minmax(150px,1fr) 1fr 1fr;
+  grid-auto-rows: 600px;
+  padding: 3px;
+  justify-items: stretch;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
+  
+}
+
+
+.card img {
+  width: 100%;
+  height: 450px;
+  border-radius: 8px;
+  margin-top: 100px;
+  position: absolute;
+  
+  left: 10px;
+  
+  transition: opacity 0.3s ease;
+}
+
+    .imagen-hover {
+      opacity: 0;
+      position:fixed
+    
+    }
+
+    .card:hover .imagen-hover {
+      opacity: 1;
+    }
+
+    .card:hover .imagen-original {
+      opacity: 0;
+    }
+.card h3 {
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: lightpink;
+  text-align: center;
+  padding: 20px;
+  
+}
+@font-face{
+  font-family: 'Mifuente';
+  src:url(fuentes/Ribeye-Regular.ttf);
+}
+@font-face{
+  font-family: 'Mifuente2';
+  src:url(fuentes/Aesthetic\ Moment\ \ Italic\ Personal\ Used.ttf);
+}
+@font-face{
+  font-family: 'Mifuente3';
+  src:url(fuentes/palevioletred);
+}
