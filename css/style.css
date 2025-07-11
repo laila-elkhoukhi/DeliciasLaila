@@ -26,11 +26,11 @@
   animation-delay: 0.5s;
 }
 @keyframes entrarDesdeArriba {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
 
 
 body {
@@ -91,17 +91,17 @@ nav a {
 }
 .especial {
       
-      opacity: 0;
-      transform: translateX(100%);
-      animation: entrarDesdeDerecha 3s ease-out forwards;
-    }
+  opacity: 0;
+  transform: translateX(100%);
+  animation: entrarDesdeDerecha 3s ease-out forwards;
+}
 
-    @keyframes entrarDesdeDerecha {
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
+@keyframes entrarDesdeDerecha {
+  to {
+    opacity: 1;
+    transform: translateX(0);
     }
+}
 
 
 .btn {
